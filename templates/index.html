@@ -1,0 +1,92 @@
+<html>
+<body bgcolor='#4F6367'>
+
+<style>
+
+
+#article{
+            
+			width: 90%;
+    		height:120px;
+    		padding: 12px 26px;
+    		margin:8px 26px;
+    		display:inline-block;
+    		border: 1px solid #ccc;
+    		font-size:14px;
+			
+
+
+    	}
+#result{
+            
+			width: 90%;
+    		height:120px;
+    		padding: 12px 26px;
+    		margin:8px 26px;
+    		display:inline-block;
+    		border: 1px solid #ccc;
+    		font-size:14px;
+			
+
+
+    	}
+
+.sub{
+    		background-color: #4CAF50;
+    		color:white;
+    		padding: 14px 20px;
+    		margin: 8px 26px;
+    		border: none;
+    		cursor:pointer;
+    		font-size:18px;
+    	}
+.f1{
+ background-color:#EEF5DB;
+ width:50%;
+ height:50%;
+ margin-left:100px;
+ margin-right:100px;
+
+
+}
+
+.box{
+            
+           width:970px;
+           height:605px;
+		   line-height:20px;
+		   color:#ffff;
+           background-image: url('static/back.jpg');
+		  
+           top:53%;
+           left:50%;
+           position: absolute;
+           transform:translate(-50%,-50%);
+           box-sizing: border-box;
+
+                }
+                form{
+
+                	font-size:20px;
+                }
+
+</style>
+<center><h1 style="color:#ffff;top:20px">Sentiment Analysis</h1></center>
+
+<div class="box">
+<form  id="art" method='post'>
+<center>
+<br>
+<h2><b style="top:20px;">Enter Article<b></h2>
+<br>
+<textarea style="top:20px;" type="textarea" name="article" placeholder="Enter Article....." id="article"></textarea>
+<input style="margin:20px;" type="submit" name=sub class=sub value="Submit">
+<h2><b style="top:20px;">Result</b></h2><br></form>
+<textarea style="top:20px;" type="textarea" name="result" id="result">{{ prediction_text }}</textarea><br>
+</center>
+
+</div>
+
+
+</body>
+</html>
